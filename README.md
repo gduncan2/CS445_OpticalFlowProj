@@ -37,6 +37,7 @@ For example, a 30FPS original video is first boosted to a 60FPS blended video(or
 </video>
 
 ### <span style="color:#e36ded"> Steps to Run </span>
+- If running in google collab, ensure that the relevant media drives are mounted and that you enable the T4 gpu for the runtime type.
 - If running locally, then create a new virtual environment using venv and then install all dependencies as mentioned below.
     - ```python3 -m venv .venv```
     - ```source .venv/bin/activate```(Linux/MacOS)
