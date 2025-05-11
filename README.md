@@ -44,3 +44,4 @@ For example, a 30FPS original video is first boosted to a 60FPS blended video(or
 - The function launches multiple threads in parallel based on the number of available threads
 - There are two output videos generated, an interpolated video and the final generated video.
 - The interpolated video is where we have stitched all the artificial frames only.
+- If running in google collab, ensure that the relevant media drives are mounted and that you enable the T4 gpu for the runtime type.
