@@ -25,11 +25,13 @@ For example, a 30FPS original video is first boosted to a 60FPS blended video(or
 
 ### <span style="color:#e36ded"> Results </span>
 ![RoadRunner](./output.gif)
-- The above GIF showcases our algorithm in action at half the original speed.
+- The above GIF showcases our algorithm in action at half the original speed. [Frame by frame comparison](https://drive.google.com/file/d/1Y4ir2wgfA-ildlJYmogYe5TJhESbdDk6/view?usp=drive_link) 
 - The first video is of the original 30FPS video.
 - The stream in the middle shows us the interpolated and original blends.
 - The final stream doubles the blended video itself.
-- We go from 30 -> 60 -> 120 without any visible drop in quality and the final video generated has no stuttering.  
+- We go from 30 -> 60 -> 120 without any visible drop in quality and the final video generated has no stuttering. [Side by side comparison](https://drive.google.com/file/d/1nAOe7fuyQe0g-la-7g5aTotA02CPsa1m/view?usp=sharing)
+<br/>
+<br/>
 <video controls>
     <source src="combined_comparison_road_runner_x265_super_slow_xstack.mp4" type="video/mp4">
 </video>
