@@ -37,6 +37,11 @@ For example, a 30FPS original video is first boosted to a 60FPS blended video(or
 </video>
 
 ### <span style="color:#e36ded"> Steps to Run </span>
+- If running locally, then create a new virtual environment using venv and then install all dependencies as mentioned below.
+    - ```python3 -m venv .venv```
+    - ```source .venv/bin/activate```(Linux/MacOS)
+    - ```.\.venv\Scripts\Activate.ps1```(Windows)
+    - ```pip install -r requirements.txt```
 - Run the notebook sequentially. There is a hard dependency on an NVIDIA GPU, since we are using ```cupy```
 - The main driver function is ```interpolate_full_video_parallel```. It takes the path to an input video file and an output.
 - Individual frames are generated in three folders prefixed as follows: -
@@ -44,4 +49,3 @@ For example, a 30FPS original video is first boosted to a 60FPS blended video(or
 - The function launches multiple threads in parallel based on the number of available threads
 - There are two output videos generated, an interpolated video and the final generated video.
 - The interpolated video is where we have stitched all the artificial frames only.
-- If running in google collab, ensure that the relevant media drives are mounted and that you enable the T4 gpu for the runtime type.
